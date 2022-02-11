@@ -11,6 +11,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('MyHomePage build');
     var counter = Provider.of<Counter>(context).getCounter;
     return Scaffold(
       appBar: AppBar(
@@ -26,7 +27,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: () => _incrementcounter(context), child: Icon(Icons.add)),
+          onPressed: () =>  _incrementcounter(context), child: Icon(Icons.add)),
     );
   }
 }
